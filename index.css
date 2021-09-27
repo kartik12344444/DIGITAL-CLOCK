@@ -48,9 +48,14 @@ body{
   position: relative;
   margin-top: -10px;
 }
-.above{
-  position: absolute;
-  margin-top: -500px;
+#above{
+  font-size: 30px;
+  color: var(--light-blue);
+  text-align: left;    
+  opacity: 1;
+  padding: 1rem;
+  z-index: 1;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
 .clock-logo img{
   width: 120px; 
@@ -170,19 +175,22 @@ padding: 2rem;
 
 
 .box-2-image{
-  width: 536px;
-  height: 474px;
-background-color: #FFFFFF;
+width: 536px;
+height: 500px;
+background: #FFFFFF;    
 border-radius: 10px;
 border: 1px solid var(--light);
 position: relative;
+background-repeat: no-repeat;
+background-position: bottom;
+background-size: 100%;
 
 }
 
-.box-2-image img{
+/* .box-2-image-img{
   background: #FFFFFF url('./home.png') 0% 0% no-repeat padding-box;
 opacity: 1;
-}
+} */
 
 #wake-up img{
  width: 70%;
@@ -226,24 +234,19 @@ right: 0;
 }
 
 .heading{
-  width: 566px;
+width: 566px;
 height: 77px;
-
-
 background: #5F0089 0% 0% no-repeat padding-box;
-
 border-radius: 10px;
-
 display: flex;
 text-align: left;
 align-items:center ;
 
 }
 .heading div{
-  font-size: 30px;
+font-size: 30px;
 color: white;
 text-align: left;
-
 opacity: 1;
 padding: 2rem;
 font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
@@ -313,6 +316,7 @@ margin-left: 0.5rem;
 
 
 
+
 /* For Mobile */
 @media screen and (min-width: 320px) and (max-width: 900px) {
 .header{
@@ -326,7 +330,7 @@ body{
   display: block;
 }
 .time-container{
-  margin-left: 60px;
+  margin: auto;
   width: 350px;
 }
 #time-main{
@@ -338,8 +342,7 @@ body{
  
 }
 .time-line{
-   
-  display: none;
+   display: none;
 }
 .bg-gradient{   
 font-size: 30px;
@@ -353,7 +356,7 @@ font-size: 1.2rem;
 
 }
 .left-conatiner-1{
-  margin-left: 60px;
+  margin: auto;
 }
 .box-1-times{   
   margin: auto;  
@@ -367,7 +370,7 @@ select{
   height: 45px;
 }
 
-.wish-heading{
+.heading{
   width: 350px;
   margin: auto;
 }
@@ -378,25 +381,19 @@ select{
   box-sizing: border-box;
 }
 .box-2-image{
-  width: 350px;
-  padding: 1rem;
-height: 300px;;
-margin: auto;
-margin-left: 100px;
-
-}
-.box-2-image div{
-  font-size: 25px;
- padding: 0rem;
+ width: 350px;
+ padding: 1rem;
+ height: 500px;;
+ margin: auto;
 }
 .wish-button{
   width: 299px;
-height: 50px;
-margin: auto;
-margin-bottom: 1rem;
+  height: 50px;
+  margin: auto;
+  margin-bottom: 1rem;
 }
 .clock-logo{
-  margin-left: 170px;
+  margin-left: 20px;
 }
 .clock-logo img{
   width: 60px;  
@@ -417,18 +414,5 @@ margin-bottom: 1rem;
   top: 9.5rem;
   margin-left: 10px;
   margin-top: -40px;
-}
-.heading{
-  margin-left: 5px;
-  width: 300px;
-}
-.above{
-  margin-top: -450px;
-}
-.resize{
-  margin-left: -115px;
-  margin-top: -20px;
-  
-  
 }
 }
