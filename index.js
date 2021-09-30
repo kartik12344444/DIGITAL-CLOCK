@@ -46,7 +46,7 @@ function noonAfter(){
 function nightFun(){
  mssgUpdate.innerText ="Its Sleep Time. Have a Nice Sleep";
  wishHeading.innerText ="Good Night!!";
- themeIMG.style.backgroundImage = "url('./Sleep.svg')";
+ themeIMG.style.backgroundImage = "url('./night.svg')";
 }
 function freetime(){
   mssgUpdate.innerText ="Its Your Free Time";
